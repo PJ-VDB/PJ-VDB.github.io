@@ -177,3 +177,16 @@
     align-content: center;
     vertical-align: middle;
 }
+
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.extra-padding {
+//    width: 100%;
+//    align-content: center;
+}
