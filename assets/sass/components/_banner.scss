@@ -24,6 +24,7 @@
 								'opacity #{$y} ease-in-out',
 								'transform #{$y} ease-in-out'
 							));
+                            
 						}
 
 						#{$x} {
@@ -983,3 +984,28 @@
 	}
 
 	@include color-banner;
+.rotate-text {
+    display: inline;
+    position: absolute;
+    width:auto;
+    align-content: flex-start;
+}
+
+
+
+.love-text {
+    white-space: nowrap;
+/*
+    position: absolute;
+    left: 46%;
+*/
+    text-align: left;
+    
+     position: absolute;
+    /* move the element half way across the screen */
+    left: 47%;
+    /* allow the width to be calculated dynamically */
+    width: auto;
+    /* then move the element back again using a transform */
+    transform: translateX(-50%);
+}

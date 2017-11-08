@@ -23,13 +23,56 @@
         <section class="banner style5 onload-image-fade-in onload-content-fade-in fullscreen content-align-center image-position-center">
             <div class="content">
                 <h1>Hi!I'm Pieter-Jan</h1>
-                <p class="major">I love to ...</p>
-                <ul class="actions vertical">
+                <div class="major i-love-offset">I love to
+                    <div class="animated-words">
+                        <span>code</span>
+                        <span>travel</span>
+                        <span>surf</span>
+                        <span>engineer</span>
+                        <span>hike</span>
+                        <span>swim</span>
+                    </div>
+
+                </div>
+                <!--
+                <div class="major love-text">
+                    <h2><span class="major i-love"> I love to</span><span class="rotate-text" id="rotate">default</span></h2>
+                    
+                    <ul style="display:none">
+                        <li>&nbsp;code</li>
+                        <li>&nbsp;travel</li>
+                        <li>&nbsp;surf</li>
+                        <li>&nbsp;engineer</li>
+                        <li>&nbsp;hike</li>
+                        <li>&nbsp;swim</li>
+                        <li>&nbsp;laugh</li>
+                        <li>&nbsp;eat</li>
+                    </ul>
+                    
+                </div>
+-->
+                <ul class="actions vertical" style="margin-top: 2rem">
                     <li><a href="#first" class="button big wide smooth-scroll-middle">About Me</a></li>
                 </ul>
             </div>
             <div class="image">
-                <img src="images/banner.jpg" alt="" />
+                <script type="text/javascript">
+                    var d = new Date();
+	                var n = d.getHours();
+
+                    if (n > 19 || n < 6)
+                      // If time is after 7PM or before 6AM, apply night theme to ‘body’
+                      document.write('<img src="images/background-3.jpg">');
+                    else if (n > 16 && n < 19)
+                      // If time is between 4PM – 7PM sunset theme to ‘body’
+                      document.write('<img src="images/background-2.jpg">');
+                    else
+                      // Else use ‘day’ theme
+                      document.write('<img src="images/background-2.jpg">');
+                    
+                </script>
+
+<!--                <img src="images/banner.jpg" alt="" />-->
             </div>
         </section>
 
@@ -46,7 +89,7 @@
                 <img src="images/picture-me.jpg" alt="" />
             </div>
         </section>
-        
+
         <!-- Timeline -->
         <section class="wrapper" id="timeline">
             <div class="timeline-section-title">
@@ -195,15 +238,15 @@
                 <p>I am an avid photographer and every now and then I post a picture on Instagram. Check them out here.</p>
             </div>
 
-           <div class="">
-           
-             <div id="instafeed" class="gallery style2 medium lightbox onscroll-fade-in"></div>
+            <div class="">
 
-           
+                <div id="instafeed" class="gallery style2 medium lightbox onscroll-fade-in"></div>
+
+
             </div>
         </section>
 
-<!--
+        <!--
             <div class="gallery style2 medium lightbox onscroll-fade-in">
                 <article>
                     <a href="images/gallery/fulls/01.jpg" class="image">
@@ -358,47 +401,23 @@
         <!-- Footer -->
         <footer class="wrapper style1 align-center">
             <div class="inner">
-<!--                <div class="row">-->
-<!--                    <div class="col-md-6 .col-xs-6 container">-->
-                        <header>
-                            <h2>Contact me</h2>
-                            <p>
-                                Don't hesitate to contact me if you have any questions or requests!
-                            </p>
-                        </header>
-                        <ul class="icons">
-                            <li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-                            <li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-                            <li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
-                            <li><a href="#" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                            <li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-                        </ul>
-                    </div>
+                <!--                <div class="row">-->
+                <!--                    <div class="col-md-6 .col-xs-6 container">-->
+                <header>
+                    <h2>Contact me</h2>
+                    <p>
+                        Don't hesitate to contact me if you have any questions or requests!
+                    </p>
+                </header>
+                <ul class="icons">
+                    <li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+            </div>
 
-<!--
-                    <div class="col-md-6 .col-xs-6 container">
-                        <div class="medium extra-padding">
-                            <h2>Get in touch</h2>
-                            <form method="post" action="#">
-                                <div class="field half first">
-                                    <label for="name">Name</label>
-                                    <input type="text" name="name" id="name" value="" />
-                                </div>
-                                <div class="field half">
-                                    <label for="email">Email</label>
-                                    <input type="email" name="email" id="email" value="" />
-                                </div>
-                                <div class="field">
-                                    <label for="message">Message</label>
-                                    <textarea name="message" id="message" rows="6"></textarea>
-                                </div>
-                                <ul class="actions">
-                                    <li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
-                                </ul>
-                            </form>
-                        </div>
-                    </div>
--->           
             <div class="copyright align-center">
                 <p>&copy; Pieter-Jan Vandenbrande. Thanks to <a href="https://html5up.net">HTML5 UP</a> for their amazing resources.</p>
             </div>
